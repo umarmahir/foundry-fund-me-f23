@@ -11,7 +11,7 @@ contract DeployFundMe is Script {
     function run() external returns (FundMe) {
         // The next line runs before the vm.startBroadcast() is called
         // This will not be deployed because the `real` signed txs are happening
-        // between the start and stop Broadcast lines.
+        // between the start and stop Broadcast lines
         HelperConfig helperConfig = new HelperConfig();
         address ethUsdPriceFeed = helperConfig.activeNetworkConfig();
 
